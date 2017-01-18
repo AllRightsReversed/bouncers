@@ -54,15 +54,6 @@ export default class bouncers extends Component {
       },
     );
 
-    const ball = Matter.Bodies.rectangle(
-      dimensions.width, dimensions.height / 2,
-       1, dimensions.height - 5,
-      {
-        isStatic: true,
-      },
-    );
-
-
     Matter.World.add(engine.world, [ground, leftWall, rightWall, ceiling]);
   }
 
